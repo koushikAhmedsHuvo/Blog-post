@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -10,20 +11,20 @@ const Header = () => {
         <div className="flex flex-row space-x-4 mr-10">
           <ul className="flex space-x-4">
             <li>
-              <a
-                href=""
+              <Link
+                to="/login"
                 className="hover:text-gray-300 transition duration-300 text-3xl"
               >
                 Login
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href=""
+              <Link
+                to="/signup"
                 className="hover:text-gray-300 transition duration-300 text-3xl"
               >
-                Sign Up
-              </a>
+                SignUp
+              </Link>
             </li>
           </ul>
         </div>
